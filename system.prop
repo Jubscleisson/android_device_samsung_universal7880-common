@@ -5,6 +5,11 @@ audio_hal.force_voice_config=wide
 # Bluetooth
 ro.bt.bdaddr_path=/efs/bluetooth/bt_addr
 
+# Blur
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+persist.sys.sf.disable_blurs=0
+
 # Bluetooth workaround:
 # The new CAF code defaults to MCT HAL
 vendor.qcom.bluetooth.soc=rome
